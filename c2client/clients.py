@@ -332,3 +332,9 @@ class LogsClient(C2Client):
         else:
             response = cls.make_request(action, arguments, verify)
             print(response)
+
+
+class SecretsManagerClient(C2Client):
+
+    url_key = "SECRETS_MANAGER_URL"
+    client_name = "secretsmanager"
